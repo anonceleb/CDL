@@ -231,9 +231,8 @@ section.tight{padding:64px 0}
 .room-gallery{display:grid;gap:12px}
 .room-gallery .wide{aspect-ratio:16/9;overflow:hidden}
 .room-gallery .wide img{width:100%;height:100%;object-fit:cover}
-.room-gallery .pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.room-gallery .pair div{aspect-ratio:4/3;overflow:hidden}
-.room-gallery .pair img{width:100%;height:100%;object-fit:cover}
+.room-gallery .single{aspect-ratio:4/3;overflow:hidden}
+.room-gallery .single img{width:100%;height:100%;object-fit:cover}
 .check-strip{
   height:14px;margin-top:28px;
   background-image:conic-gradient(var(--charbon) 25%,transparent 0 50%,var(--charbon) 0 75%,transparent 0);
