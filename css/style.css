@@ -219,10 +219,23 @@ section.tight{padding:64px 0}
 .menu-note a{color:var(--rouge-ink)}
 
 /* ---------- coffee bar ---------- */
-.coffeebar-grid{display:grid;grid-template-columns:1fr;gap:34px}
-@media(min-width:860px){.coffeebar-grid{grid-template-columns:1.05fr 1fr;gap:52px;align-items:center}}
-.coffeebar-grid .photo{aspect-ratio:4/3;overflow:hidden}
-.coffeebar-grid .photo img{width:100%;height:100%;object-fit:cover}
+.coffee-pours{display:grid;grid-template-columns:repeat(2,1fr);gap:24px 20px;margin-top:8px}
+@media(min-width:760px){.coffee-pours{grid-template-columns:repeat(4,1fr);gap:28px 24px}}
+.pour .frame{position:relative;aspect-ratio:1;overflow:hidden;background:var(--charbon-2)}
+.pour .frame img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.pour:hover .frame img{transform:scale(1.045)}
+.pour .ribbon{
+  position:absolute;top:10px;left:10px;
+  font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;
+  background:var(--beurre);color:var(--charbon);padding:4px 9px;font-weight:500;
+}
+.pour .meta{padding-top:12px}
+.pour .meta b{display:block;font-size:15px;font-weight:600;color:var(--on-dark);line-height:1.3}
+.pour .meta .desc{display:block;font-size:13px;color:var(--on-dark-muted);margin-top:5px;line-height:1.5}
+
+.brew-note{margin-top:52px;padding-top:34px;border-top:1px solid color-mix(in srgb, var(--on-dark) 15%, transparent)}
+.brew-note .lab{color:var(--beurre);margin-bottom:10px}
+.brew-note p{color:var(--on-dark-muted);max-width:62ch;font-size:15.5px}
 .brew-methods{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
 @media(max-width:520px){.brew-methods{grid-template-columns:repeat(2,1fr)}}
 .brew-methods figure{margin:0}
