@@ -14,7 +14,6 @@ in `index.html` before pointing the real domain at it:
 | **"Weekend" hours** | `js/main.js` (`computeStatus`) and the `<script type="application/ld+json">` block + hours table in `index.html` | Assumed **Friday & Saturday** close at 11:30pm. If it's actually Saturday & Sunday, change `day === 5 \|\| day === 6` in `main.js` to `day === 6 \|\| day === 0`, and swap the corresponding rows in the JSON-LD `openingHoursSpecification` and the `<table class="hours">`. |
 | **Instagram handle** | Footer, `<a href="https://instagram.com/cafedulamour">` | Guessed handle — replace with the real one. |
 | **FSSAI licence number** | Footer, `.foot-bottom` | Says "pending" — replace with the real number once supplied. |
-| **Virgin Mojito photo** | `img/bs-mojito-*` | Currently a stand-in shot ("Minty Fresh Delight"), flagged on the page with a "Photo coming soon" badge. Swap in the real photo and remove the `.missing` badge markup in `index.html` (search for `bs-mojito`). |
 
 ## Deploying (Cloudflare Pages — recommended)
 
