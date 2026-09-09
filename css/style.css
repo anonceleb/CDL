@@ -24,7 +24,9 @@
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-html,body{overflow-x:hidden}
+/* clip, not hidden: overflow-x:hidden forces overflow-y:auto per spec, which
+   creates a second scroll container and breaks the masthead's position:sticky */
+body{overflow-x:clip}
 body{
   margin:0;
   background:var(--paper);
@@ -194,16 +196,17 @@ section.tight{padding:64px 0}
 .seller .frame{position:relative;aspect-ratio:1;overflow:hidden;background:var(--paper-2)}
 .seller .frame img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
 .seller:hover .frame img{transform:scale(1.045)}
-.seller .diet{
-  position:absolute;top:10px;left:10px;width:16px;height:16px;
-  border:1.5px solid;display:grid;place-items:center;background:var(--paper);
+.diet{
+  width:16px;height:16px;flex:none;
+  border:1.5px solid;display:inline-grid;place-items:center;background:var(--paper);
 }
-.seller .diet.veg{border-color:#2f7d3e}
-.seller .diet.veg::after{content:"";width:7px;height:7px;border-radius:50%;background:#2f7d3e}
-.seller .diet.nonveg{border-color:#a8341e}
-.seller .diet.nonveg::after{content:"";width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:8px solid #a8341e}
-.seller .diet.egg{border-color:#c9971f}
-.seller .diet.egg::after{content:"";width:7px;height:7px;border-radius:50%;background:#c9971f}
+.diet.veg{border-color:#2f7d3e}
+.diet.veg::after{content:"";width:7px;height:7px;border-radius:50%;background:#2f7d3e}
+.diet.nonveg{border-color:#a8341e}
+.diet.nonveg::after{content:"";width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:8px solid #a8341e}
+.diet.egg{border-color:#c9971f}
+.diet.egg::after{content:"";width:7px;height:7px;border-radius:50%;background:#c9971f}
+.seller .diet{position:absolute;top:10px;left:10px}
 .seller .meta{padding-top:12px;display:grid;gap:2px}
 .seller .meta b{font-size:16px;font-weight:600;line-height:1.3}
 .seller .meta .when{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
@@ -310,3 +313,46 @@ footer{background:var(--charbon);color:var(--on-dark-muted);padding:56px 0 26px}
 .mobile-orderbar .btn{flex:1;padding:12px 10px;font-size:14px}
 
 .overflow-x{overflow-x:auto}
+
+/* ================= FULL MENU PAGE ================= */
+.menu-hero{padding:56px 0 44px;border-bottom:1px solid var(--rule)}
+.menu-hero .lab{color:var(--rouge-ink);margin-bottom:14px}
+.menu-hero h1{font-size:clamp(36px,5.4vw,58px);line-height:1.06}
+.menu-hero p{color:var(--muted);font-size:17px;max-width:60ch;margin-top:16px}
+.menu-hero .note{
+  margin-top:22px;padding:14px 18px;border:1px solid var(--rule);background:var(--paper-2);
+  font-size:14.5px;color:var(--muted);max-width:64ch;
+}
+.menu-hero .note b{color:var(--ink);font-weight:600}
+.menu-hero .note a{color:var(--rouge-ink)}
+.menu-hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+
+.menu-jump{
+  display:flex;flex-wrap:wrap;gap:8px 10px;padding:22px 0;border-bottom:1px solid var(--rule);
+}
+.menu-jump a{
+  font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.04em;
+  color:var(--muted);text-decoration:none;border:1px solid var(--rule);border-radius:999px;
+  padding:6px 13px;white-space:nowrap;
+}
+.menu-jump a:hover{color:var(--rouge-ink);border-color:var(--rouge)}
+
+.menu-index{padding:8px 0 30px}
+.menu-cat{padding:34px 0;border-bottom:1px solid var(--rule);scroll-margin-top:84px}
+.menu-cat h3{
+  display:flex;align-items:baseline;gap:10px;
+  font-family:"Bodoni Moda",serif;font-weight:500;font-size:25px;
+}
+.menu-cat-count{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:400;color:var(--muted)}
+.menu-list{list-style:none;margin:20px 0 0;padding:0;columns:1;column-gap:44px}
+@media(min-width:640px){.menu-list{columns:2}}
+.menu-list li{
+  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+  padding:10px 0;border-bottom:1px solid var(--rule);break-inside:avoid;
+}
+.menu-item-name{font-size:15.5px;line-height:1.3}
+.menu-item-diet{display:flex;gap:4px}
+
+.menu-close{padding:44px 0 8px;text-align:center}
+.menu-close p{margin:0 auto;max-width:52ch;color:var(--muted);font-size:15px}
+.menu-close .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}

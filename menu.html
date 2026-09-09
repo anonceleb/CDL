@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café du L'Amour — The Menu</title>
+<meta name="description" content="Everything on the menu at Café du L'Amour, Koramangala — breakfast, pasta, pizza, grills, coffee and mocktails, browsable by category. No prices shown here; order via Zomato or Swiggy for the priced menu.">
+
+<link rel="icon" href="img/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="canonical" href="https://cafe-du-lamour.com/menu.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Café du L'Amour">
+<meta property="og:title" content="The Menu — Café du L'Amour">
+<meta property="og:description" content="Everything on the menu at Café du L'Amour, Koramangala, browsable by category.">
+<meta property="og:image" content="https://cafe-du-lamour.com/img/og-logo.jpg">
+<meta property="og:url" content="https://cafe-du-lamour.com/menu.html">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&family=IBM+Plex+Mono:wght@400;500&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Noto+Sans+Kannada:wght@500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<a class="sr-only" href="#main">Skip to content</a>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="masthead">
+  <div class="bar">
+    <a class="brand" href="index.html">
+      <img class="wordmark" src="img/wordmark-640.png" srcset="img/wordmark-320.png 320w, img/wordmark-640.png 640w" alt="Café du L'Amour — Cafe of Love" width="640" height="302">
+      <span class="kn">ಕೆಫೆ ದು ಲ'ಅಮೋರ್</span>
+    </a>
+
+    <span class="status-pill" data-status-pill>
+      <span class="dot" aria-hidden="true"></span>
+      <span data-status-text>Checking hours…</span>
+    </span>
+
+    <nav aria-label="Primary">
+      <a href="index.html#best-sellers">Dine-In</a>
+      <a href="index.html#coffee">Coffees</a>
+      <a href="index.html#best-sellers">Mocktails</a>
+      <a href="menu.html" aria-current="page">Full Menu</a>
+      <a href="index.html#visit">Visit</a>
+    </nav>
+
+    <a class="btn btn-solid order-btn" href="#" data-order-open>Order</a>
+
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+    <a href="index.html#best-sellers">Dine-In</a>
+    <a href="index.html#coffee">Coffees</a>
+    <a href="index.html#best-sellers">Mocktails</a>
+    <a href="menu.html" aria-current="page">Full Menu</a>
+    <a href="index.html#visit">Visit</a>
+  </div>
+</header>
+
+<!-- order sheet -->
+<div class="order-sheet" data-order-sheet role="dialog" aria-modal="true" aria-labelledby="order-title">
+  <div class="order-card">
+    <div class="row"><button class="close" data-order-close aria-label="Close">&times;</button></div>
+    <h3 id="order-title">Order from Café du L'Amour</h3>
+    <p style="color:var(--muted);font-size:14.5px">You'll leave this page — ordering is handled by our delivery partners.</p>
+    <div class="order-links">
+      <a href="https://www.zomato.com/bangalore/cafe-du-lamour-1-koramangala-4th-block-bangalore/order" target="_blank" rel="noopener">Order on Zomato <span class="arrow">→</span></a>
+      <a href="https://www.swiggy.com/city/bangalore/cafe-du-lamour-koramangala-rest927690" target="_blank" rel="noopener">Order on Swiggy <span class="arrow">→</span></a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ INTRO ============ -->
+  <section class="menu-hero" data-hero>
+    <div class="wrap">
+      <p class="lab">The full range</p>
+      <h1>Everything on the menu.</h1>
+      <p>Breakfast through last call — every dish and drink we make, grouped the way our kitchen groups them. This page shows the range, not the price list.</p>
+      <div class="note">
+        <b>No prices here on purpose.</b> Prices change more often than this page will — for current pricing, order directly through <a href="https://www.zomato.com/bangalore/cafe-du-lamour-1-koramangala-4th-block-bangalore/order" target="_blank" rel="noopener">Zomato</a> or <a href="https://www.swiggy.com/city/bangalore/cafe-du-lamour-koramangala-rest927690" target="_blank" rel="noopener">Swiggy</a>, both of which stay current automatically.
+      </div>
+      <div class="ctas">
+        <a class="btn btn-solid" href="#" data-order-open>Order online</a>
+        <a class="btn btn-ghost" href="index.html#best-sellers">See the best-sellers</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JUMP NAV ============ -->
+  <div class="wrap">
+      <nav class="menu-jump" aria-label="Jump to category">
+        <a href="#breakfast">Breakfast</a>
+        <a href="#toasts-wraps">Toasts &amp; Wraps</a>
+        <a href="#egg-preparations">Egg Preparations</a>
+        <a href="#starters">Starters</a>
+        <a href="#salads-soups">Salads / Soups</a>
+        <a href="#pasta">Pasta</a>
+        <a href="#pizzas">Pizzas</a>
+        <a href="#burgers-sandwiches">Burgers &amp; Sandwiches</a>
+        <a href="#main-course">Main Course</a>
+        <a href="#pancakes-waffles">Pancakes &amp; Waffles</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#hot-coffees-teas">Hot Coffees &amp; Teas</a>
+        <a href="#cold-coffees-teas">Cold Coffees &amp; Teas</a>
+        <a href="#nitro-cold-brew-speciality-coffees">Nitro Cold Brew &amp; Speciality Coffees</a>
+        <a href="#mocktails-milkshakes">Mocktails &amp; Milkshakes</a>
+        <a href="#kombucha">Kombucha</a>
+        <a href="#chef-s-specials">Chef&#x27;s Specials</a>
+        <a href="#special-beverages">Special Beverages</a>
+      </nav>
+
+    <!-- ============ CATEGORY INDEX ============ -->
+    <div class="menu-index">
+      <div class="menu-cat" id="breakfast">
+        <h3>Breakfast <span class="menu-cat-count">7</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Classic French Toast</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">The Express Breakfast</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Big Frenchie Breakfast</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">L&#x27;Amour Crepes Au Fruit Breakfast</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Full English Breakfast</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Veg Full English Breakfast</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Healthy Vegan Breakfast</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="toasts-wraps">
+        <h3>Toasts &amp; Wraps <span class="menu-cat-count">11</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Garlic Toast</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Garlic Toast With Cheese</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Chilli Cheese Toast</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">French Onion Bruschetta</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Tomato &amp; Bocconcini Crostini Toast</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Cheesy Mushrooms Toast</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Baked Beans On Toast</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Cilantro Jalapeno Chicken Wrap</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Roasted Veggies &amp; Mozzarella Wrap</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Bacon And Feta Wrap</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Mediterranean Scrambled Eggs Toast</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="egg-preparations">
+        <h3>Egg Preparations <span class="menu-cat-count">10</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Scrambled Egg</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Egg Bhurji</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Egg Huevos Rotos</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Simple Pleasure Omelette</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Egg White Omelette</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Masala Omelette</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">The Great White Omelette</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Pesto Perfection Omelette</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Classic Elegance Omelette</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">L&#x27;Amour Cheesy Royale Omelette</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="starters">
+        <h3>Starters <span class="menu-cat-count">15</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Potato Wedges</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">French Fries</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Peri Peri French Fries</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Jalapeno Cheese Poppers</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Gourmet Nachos</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Chicken Popcorn</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Mushroom And Parmesan Croquettes</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Mexican Veg Quesadilla</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">L&#x27;Amour Chicken Wings</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Supreme Cajun Chicken Frenzy</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Mexican Chicken Quesadilla</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Classic Fish Fingers</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">CDL Special Cheesy Garlic Prawns</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Gourmet Nachos Chicken</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Crispy Cauliflower Florets</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="salads-soups">
+        <h3>Salads / Soups <span class="menu-cat-count">10</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Thai Cucumber Salad</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Veg Greek Salad</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Chicken Greek Salad</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Watermelon &amp; Feta</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Veg Classic Caesar Salad</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Chicken Classic Caesar Salad</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Silky Broccoli and Spinach Soup</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Cream of Mushroom Soup</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Roasted Tomato Basil Soup</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Cream of Chicken Soup</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="pasta">
+        <h3>Pasta <span class="menu-cat-count">8</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">L&#x27;Amour Mac N Cheese Pasta</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Alfredo Pasta</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Arrabiata Pasta</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Basil Pesto Pasta</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Primavera Pasta</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Spaghetti Aglio-Olio Pasta</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Spaghetti Mushroom Florentine Pasta</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Spaghetti Carbonara Pasta - Bacon</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="pizzas">
+        <h3>Pizzas <span class="menu-cat-count">8</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">L&#x27;Amour Farmhouse Pizza</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Rustica Veggie Pizza</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Fiery Peri-Peri Paneer Pizza</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Smoky BBQ Paneer Pizza</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Golden Oven-Roasted Chicken Pizza</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">L&#x27;Amour Pesto Chicken Pizza</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Classic Italian Margherita Pizza</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Smoky BBQ Chicken Pizzza</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="burgers-sandwiches">
+        <h3>Burgers &amp; Sandwiches <span class="menu-cat-count">9</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Veggie Delight Burger</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Crispy Chicken Burger</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Fish Fillet Burger</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Crispy Prawn Burger</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Grilled Chicken Sandwich</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Vegan Delighte Sandwich</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">L&#x27;Amour Veggie Majesty Sandwich</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">L&#x27;Amour French Kiss Chicken Sandwich</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Pesto-Feta Croissant Sandwich</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="main-course">
+        <h3>Main Course <span class="menu-cat-count">13</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Mexican Rice Bowl [Paneer]</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Mexican Rice Bowl [Chicken]</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Mexican Rice Bowl [Prawns]</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Smoky Bbq Pork Chops</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Lemon Butter Grilled Fish</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Classic Stroganoff</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Classic Stroganoff (Chicken)</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">L&#x27;Amour Grilled Paneer Steak</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Chicken Florentine</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Chicken Parmigiana</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Grilled Chicken Steak</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">L&#x27;Amour Grilled Fish Steak (In Chilli Garlic Coriander Rub)</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Peri Peri Chicken Steak</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="pancakes-waffles">
+        <h3>Pancakes &amp; Waffles <span class="menu-cat-count">10</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Classic Pancakes</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Breakfast Beast Mode Pancakes</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Batty Banana Pancakes</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Belgian Dark Pancakes</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Rich Chocolate Pancakes</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Healthy Museli Pancakes</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Classic Waffles</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Bananas Gone Wild Waffles</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Blueberry Bonanza Waffles</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Chocolate Fixation Waffles</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="desserts">
+        <h3>Desserts <span class="menu-cat-count">12</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Butter Croissants</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Almond Croissants</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Cinnamon Roll</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Chocolate Croissants</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Classic Tres Leches</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Brownie With Chocolate Sauce</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Chocolate Cake</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Tender Coconut Pudding</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Chocolate Caramel Tart</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Caramel Cheese Cake</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Blueberry Cheesecake</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Cake</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="hot-coffees-teas">
+        <h3>Hot Coffees &amp; Teas <span class="menu-cat-count">21</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Espresso</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Americano</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Cortado</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Cappuccino</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Cafe Latte</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Flat White</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Affogato</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Cafe Moka</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Caramel Macchiato</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Hazelnut Cappuccino</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Nutella Coffee Brew</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Hot Chocolate</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Chamomile Tea (Caffeine Free)</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Himalayan Green Tea</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Darjeeling Black Tea</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Detox Kahwa Tea</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Turmeric and Ginger Tea</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Dopio</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Winter Hot Chocolate</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Spanish Latte</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">French Vanilla Latte</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="cold-coffees-teas">
+        <h3>Cold Coffees &amp; Teas <span class="menu-cat-count">17</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Iced Americano</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Iced Latte</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Classic Cold Coffee</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Moka Frappe With Chocochips</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Vietnamese Iced Coffee</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Caramel Frappe</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Hazelnut Frappe</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Lemon Iced Tea</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Peach Iced Tea</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Passionfruit Iced Tea</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Espresso Tonic</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Classic Cold Brew</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Vanilla Sweet Cream Cold Brew</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Cold Brew Float</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Orange Cold Brew Lemonade</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Ice Spanish Latte</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Iced French Vanilla Latte</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="nitro-cold-brew-speciality-coffees">
+        <h3>Nitro Cold Brew &amp; Speciality Coffees <span class="menu-cat-count">8</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Nitro Classic Cold Brew</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Nitro Vanilla Sweet Cream Cold Brew</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Nitro Cold Brew Float</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Aeropress - Manual Brew Coffee</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">French Press - Manual Brew Coffee</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">V60 Pour Over - Manual Brew Coffee</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Syphon - Manual Brew Coffee</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">CHEMEX - Manual Brew Coffee</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="mocktails-milkshakes">
+        <h3>Mocktails &amp; Milkshakes <span class="menu-cat-count">22</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Cucumber Mint Oasis</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Yuzu Apple Blossom</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">CDL Specia L&#x27;Amour Citrus Dream</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Litchi Chili Oasis</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Watermelon Basil Breeze</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Blue Lagoon Fantasy</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Virgin Mojito</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Cranberry Mint Sparkle</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Watermelon Mint Refresher</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Cherry Vanilla Dream</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Berry Blissful Delight</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Fig &amp; Biscoff</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Very Berry Smoothie</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Chocolate Milkshake Indulgence</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Strawberry Milkshake Delight</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Fresh Watermelon Juice</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Fresh Orange Juice</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Fresh Pineapple Juice</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Ginger Ale</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Pinacolada Smoothie</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Crunchy Oreo Milk Shake</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Fresh Lime Soda / Water</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="kombucha">
+        <h3>Kombucha <span class="menu-cat-count">3</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Berry Mix</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Alphonso Mango</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Chilly Guava</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="chef-s-specials">
+        <h3>Chef&#x27;s Specials <span class="menu-cat-count">9</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Pea Croquettes</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Corn &amp; Cheese Nibbles</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Bacon Wrapped Chicken Sausages</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Tiramisu Cup</span><span class="menu-item-diet"><span class="diet egg" title="Contains egg" aria-label="Contains egg"></span></span></li>
+          <li><span class="menu-item-name">Veggie Power Sandwich</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Paneer Melt Sandwich</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Pesto Chicken Sandwich</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Bacon &amp; Chicken Sandwich</span><span class="menu-item-diet"><span class="diet nonveg" title="Non-vegetarian" aria-label="Non-vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Chocolate Mousse</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+        </ul>
+      </div>
+      <div class="menu-cat" id="special-beverages">
+        <h3>Special Beverages <span class="menu-cat-count">5</span></h3>
+        <ul class="menu-list">
+          <li><span class="menu-item-name">Virgin Sangria</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Mango Smoothie</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">L&#x27;amour Banana &amp; Coffee Smoothie</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Peanut Butter &amp; Banana Smoothie</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+          <li><span class="menu-item-name">Banana &amp; Oats Smoothie</span><span class="menu-item-diet"><span class="diet veg" title="Vegetarian" aria-label="Vegetarian"></span></span></li>
+        </ul>
+      </div>
+
+      <div class="diet-key">
+        <span class="item"><span class="diet veg"></span> Vegetarian</span>
+        <span class="item"><span class="diet egg"></span> Contains egg</span>
+        <span class="item"><span class="diet nonveg"></span> Non-vegetarian</span>
+      </div>
+    </div>
+
+    <div class="menu-close">
+      <p>198 dishes and drinks, made fresh to order. Ready to eat? The full priced menu is one tap away.</p>
+      <div class="ctas">
+        <a class="btn btn-solid" href="https://www.zomato.com/bangalore/cafe-du-lamour-1-koramangala-4th-block-bangalore/order" target="_blank" rel="noopener">Order on Zomato</a>
+        <a class="btn btn-ghost" href="https://www.swiggy.com/city/bangalore/cafe-du-lamour-koramangala-rest927690" target="_blank" rel="noopener">Order on Swiggy</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img class="wordmark" src="img/wordmark-640.png" srcset="img/wordmark-320.png 320w, img/wordmark-640.png 640w" alt="Café du L'Amour — Cafe of Love" width="640" height="302">
+        <div>
+          <div class="kn">ಕೆಫೆ ದು ಲ'ಅಮೋರ್</div>
+          <p class="tag">Off 80 Feet Road, Koramangala 4th Block, Bengaluru. A Century Club food-service partner.</p>
+        </div>
+      </div>
+      <div class="foot-col">
+        <p class="lab">Visit</p>
+        <div>
+          Off 80 Feet Road<br>Maharaja Hotel Signal<br>Koramangala 4th Block<br>Bengaluru
+        </div>
+      </div>
+      <div class="foot-col">
+        <p class="lab">Reach us</p>
+        <div>
+          <a href="tel:+918247802281">+91 82478 02281</a><br>
+          <a href="mailto:founder@cafe-du-lamour.com">founder@cafe-du-lamour.com</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <p class="lab">Find &amp; follow</p>
+        <div>
+          <a href="https://www.instagram.com/cafe.du.lamour/" target="_blank" rel="noopener">Instagram</a><br>
+          <a href="https://www.facebook.com/p/Cafedulamour-61563101674872/" target="_blank" rel="noopener">Facebook</a><br>
+          <a href="https://www.eazydiner.com/bengaluru/cafe-du-lamour-cafe-of-love-koramangala-4th-block-south-bengaluru-699272" target="_blank" rel="noopener">EazyDiner</a><br>
+          <a href="https://www.district.in/dining/bangalore/cafe-du-lamour-1-koramangala-4th-block-bangalore" target="_blank" rel="noopener">District</a><br>
+          <a href="https://magicpin.in/Bangalore/Koramangala/Restaurant/Cafe-Du-Lamour/store/16c508b" target="_blank" rel="noopener">Magicpin</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>H-Square Business Ventures LLP · FSSAI Lic. No. 11224334000894</span>
+      <span><em>Just search "Cafe of Love" on Google — we'll be happy to greet you.</em></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MOBILE ORDER BAR ============ -->
+<div class="mobile-orderbar" data-mobile-orderbar>
+  <a class="btn btn-solid" href="https://www.zomato.com/bangalore/cafe-du-lamour-1-koramangala-4th-block-bangalore/order" target="_blank" rel="noopener">Zomato</a>
+  <a class="btn btn-ghost" href="https://www.swiggy.com/city/bangalore/cafe-du-lamour-koramangala-rest927690" target="_blank" rel="noopener">Swiggy</a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

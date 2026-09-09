@@ -1,8 +1,10 @@
 # Café du L'Amour — website
 
-A static, one-page site. No build step, no framework — `index.html`, `css/style.css`,
-`js/main.js`, and the `img/` folder are the entire site. Open `index.html` in any
-static file server and it works.
+A static, two-page site. No build step, no framework — `index.html`, `menu.html`,
+`css/style.css`, `js/main.js`, and the `img/` folder are the entire site. Open either
+page in any static file server and it works. The masthead and footer are duplicated
+across the two pages (no templating layer to share them from) — a change to one
+(new nav link, new social URL, a footer edit) needs the same edit made in both files.
 
 ## Deploying (Cloudflare Pages — recommended)
 
@@ -36,7 +38,8 @@ changes needed here.
 
 ```
 site/
-├── index.html          the whole site — one page
+├── index.html          the home page
+├── menu.html            the full range — every dish/drink name, no prices
 ├── css/style.css        all styling, light theme only (café doesn't need a dark mode)
 ├── js/main.js            live open/closed pill, mobile menu, order sheet, sticky order bar
 ├── img/                  pre-sized WebP + JPEG fallbacks, generated from Photos/
@@ -44,5 +47,14 @@ site/
 └── sitemap.xml
 ```
 
-No CSV, no menu database, no prices ship to the browser — per the brief, the site
-shows eight best-sellers as a showcase, not the full 262-item Petpooja menu.
+No prices ship to the browser anywhere on the site. `index.html` shows eight
+best-sellers as a curated showcase; `menu.html` lists all 198 items from the Petpooja
+export (262 rows minus add-ons, combos, deals, and a handful of pure bottled-water/
+soda utility rows) grouped by category with a veg/egg/non-veg mark, so a visitor can
+see the full range without either page becoming a live price list.
+
+`menu.html` was generated from `Base Menu from Petpooja.csv` by a one-off script
+(not checked into this repo) — regenerate it by re-running the same category
+grouping / name-cleanup / veg-non-veg-pair-merging logic against a fresh CSV export
+if the menu changes meaningfully; hand-editing the item list in place is fine for
+small tweaks (a renamed dish, a dropped item).
