@@ -4,16 +4,14 @@
   "use strict";
 
   /* ---------- live open / closed status ---------- */
-  // Hours: 8:00–23:00 daily, 8:00–23:30 Fri & Sat, closed all day Tuesday.
-  // NOTE: confirm with the café whether "weekend" means Fri–Sat or Sat–Sun —
-  // see the proposal doc. Currently set to Friday & Saturday.
+  // Hours: 8:00–23:00 daily, 8:00–23:30 Sat & Sun, closed all day Tuesday.
   function computeStatus(now) {
     var day = now.getDay(); // 0 Sun ... 2 Tue ... 6 Sat
     var minutes = now.getHours() * 60 + now.getMinutes();
     var OPEN = 8 * 60;
-    var CLOSE_LATE = 23 * 60 + 30; // Fri/Sat
+    var CLOSE_LATE = 23 * 60 + 30; // Sat/Sun
     var CLOSE_NORMAL = 23 * 60;    // everyone else
-    var isLateNight = day === 5 || day === 6; // Fri, Sat
+    var isLateNight = day === 6 || day === 0; // Sat, Sun
 
     if (day === 2) {
       return { open: false, label: "Closed today — back Wednesday, 8am" };

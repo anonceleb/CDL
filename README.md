@@ -4,15 +4,6 @@ A static, one-page site. No build step, no framework — `index.html`, `css/styl
 `js/main.js`, and the `img/` folder are the entire site. Open `index.html` in any
 static file server and it works.
 
-## Before you go live — confirm these
-
-The site ships with reasonable defaults where information wasn't confirmed. Fix these
-in `index.html` before pointing the real domain at it:
-
-| What | Where | Current placeholder |
-|---|---|---|
-| **"Weekend" hours** | `js/main.js` (`computeStatus`) and the `<script type="application/ld+json">` block + hours table in `index.html` | Assumed **Friday & Saturday** close at 11:30pm. If it's actually Saturday & Sunday, change `day === 5 \|\| day === 6` in `main.js` to `day === 6 \|\| day === 0`, and swap the corresponding rows in the JSON-LD `openingHoursSpecification` and the `<table class="hours">`. |
-
 ## Deploying (Cloudflare Pages — recommended)
 
 The domain `cafe-du-lamour.com` is already on Cloudflare, so Pages is the path of
