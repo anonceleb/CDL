@@ -281,7 +281,7 @@ section.tight{padding:64px 0}
 /* ================= FOOTER ================= */
 footer{background:var(--charbon);color:var(--on-dark-muted);padding:56px 0 26px}
 .foot-grid{display:grid;grid-template-columns:1fr;gap:34px}
-@media(min-width:760px){.foot-grid{grid-template-columns:1.3fr .8fr .8fr;gap:40px}}
+@media(min-width:760px){.foot-grid{grid-template-columns:1.2fr .7fr .7fr .9fr;gap:32px}}
 .foot-brand{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
 .foot-brand img.wordmark{height:46px;width:auto}
 .foot-brand .kn{font-family:"Noto Sans Kannada",sans-serif;font-size:13px;color:var(--on-dark-muted)}
