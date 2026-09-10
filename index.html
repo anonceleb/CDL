@@ -20,31 +20,62 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&family=IBM+Plex+Mono:wght@400;500&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Noto+Sans+Kannada:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&family=IBM+Plex+Mono:wght@400;500&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Noto+Sans+Kannada:wght@500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&family=IBM+Plex+Mono:wght@400;500&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Noto+Sans+Kannada:wght@500;600&display=swap"></noscript>
 <link rel="stylesheet" href="css/style.css">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "CafeOrCoffeeShop",
+  "@id": "https://cafe-du-lamour.com/#cafe",
   "name": "Café du L'Amour",
-  "alternateName": "Cafe du L'Amour Koramangala",
-  "image": "https://cafe-du-lamour.com/img/hero-interior-1800.jpg",
+  "alternateName": ["Cafe du L'Amour Koramangala", "Cafe of Love"],
+  "description": "Café of Love — a dine-in café off 80 Feet Road, Koramangala 4th Block, Bengaluru. Continental cooking with an Indian understanding, a full coffee bar with pour-overs, and mocktails. Open from 8am, closed Tuesdays.",
+  "image": [
+    "https://cafe-du-lamour.com/img/hero-interior-1800.jpg",
+    "https://cafe-du-lamour.com/img/room-exterior-1400.jpg"
+  ],
+  "logo": "https://cafe-du-lamour.com/img/og-logo.jpg",
   "url": "https://cafe-du-lamour.com/",
   "telephone": "+91-8247802281",
   "email": "founder@cafe-du-lamour.com",
-  "servesCuisine": ["Continental", "Café", "Indian Fusion"],
+  "servesCuisine": ["Continental", "Café", "Coffee", "Indian Fusion"],
   "priceRange": "₹₹",
+  "currenciesAccepted": "INR",
+  "paymentAccepted": ["Cash", "UPI", "Credit Card", "Debit Card"],
+  "smokingAllowed": false,
+  "acceptsReservations": true,
+  "hasMenu": "https://cafe-du-lamour.com/menu.html#menu",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Off 80 Feet Road, Maharaja Hotel Signal, Koramangala 4th Block",
     "addressLocality": "Bengaluru",
     "addressRegion": "Karnataka",
+    "postalCode": "560034",
     "addressCountry": "IN"
   },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Cafe+du+L%27Amour+Koramangala+4th+Block+Bengaluru",
+  "areaServed": [
+    { "@type": "Place", "name": "Koramangala, Bengaluru" },
+    { "@type": "Place", "name": "Ejipura, Bengaluru" },
+    { "@type": "Place", "name": "HSR Layout, Bengaluru" }
+  ],
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "23:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "08:00", "closes": "23:30" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "OrderAction",
+      "target": { "@type": "EntryPoint", "urlTemplate": "https://www.zomato.com/bangalore/cafe-du-lamour-1-koramangala-4th-block-bangalore/order", "inLanguage": "en", "actionPlatform": ["http://schema.org/DesktopWebPlatform","http://schema.org/AndroidPlatform","http://schema.org/IOSPlatform"] },
+      "deliveryMethod": ["http://purl.org/goodrelations/v1#DeliveryModeOwnFleet"]
+    },
+    {
+      "@type": "OrderAction",
+      "target": { "@type": "EntryPoint", "urlTemplate": "https://www.swiggy.com/city/bangalore/cafe-du-lamour-koramangala-rest927690", "inLanguage": "en", "actionPlatform": ["http://schema.org/DesktopWebPlatform","http://schema.org/AndroidPlatform","http://schema.org/IOSPlatform"] },
+      "deliveryMethod": ["http://purl.org/goodrelations/v1#DeliveryModeOwnFleet"]
+    }
   ],
   "sameAs": [
     "https://www.instagram.com/cafe.du.lamour/",
@@ -447,12 +478,37 @@
           </div>
         </div>
 
-        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Cafe+du+L%27Amour+Koramangala+4th+Block+Bengaluru" target="_blank" rel="noopener">
-          <picture>
-            <source type="image/webp" srcset="img/room-exterior-900.webp">
-            <img src="img/room-exterior-900.jpg" alt="Café du L'Amour frontage — tap to open Google Maps" loading="lazy" width="900" height="675">
-          </picture>
-          <span class="tag">Open in Google Maps →</span>
+        <a class="map-link gmap" href="https://www.google.com/maps/search/?api=1&query=Cafe+du+L%27Amour+Koramangala+4th+Block+Bengaluru" target="_blank" rel="noopener" aria-label="Open Café du L'Amour in Google Maps">
+          <svg class="gmap-canvas" viewBox="0 0 800 600" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="800" height="600" fill="#eaeef0"/>
+            <polygon points="0,430 210,600 0,600" fill="#c7e6c9"/>
+            <polygon points="620,0 800,0 800,150" fill="#c7e6c9"/>
+            <rect x="470" y="330" width="130" height="90" fill="#dfe6df"/>
+            <g transform="rotate(-27 400 300)" stroke="#fff" stroke-linecap="round">
+              <g stroke-width="7">
+                <line x1="-200" y1="60" x2="1000" y2="60"/>
+                <line x1="-200" y1="170" x2="1000" y2="170"/>
+                <line x1="-200" y1="390" x2="1000" y2="390"/>
+                <line x1="-200" y1="500" x2="1000" y2="500"/>
+                <line x1="80" y1="-200" x2="80" y2="800"/>
+                <line x1="300" y1="-200" x2="300" y2="800"/>
+                <line x1="520" y1="-200" x2="520" y2="800"/>
+                <line x1="700" y1="-200" x2="700" y2="800"/>
+              </g>
+              <line x1="-200" y1="280" x2="1000" y2="280" stroke="#f7dd9e" stroke-width="16"/>
+              <line x1="-200" y1="280" x2="1000" y2="280" stroke="#fff" stroke-width="2" stroke-dasharray="1 22"/>
+              <line x1="410" y1="-200" x2="410" y2="800" stroke="#f7dd9e" stroke-width="13"/>
+            </g>
+            <text x="250" y="120" transform="rotate(-27 250 120)" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#9aa0a6" letter-spacing="0.5">80 Feet Road</text>
+            <text x="60" y="470" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#9aa0a6">Koramangala 4th Block</text>
+            <text x="500" y="410" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#a8ad86">National Games Village</text>
+            <ellipse cx="404" cy="300" rx="15" ry="5" fill="rgba(0,0,0,0.18)"/>
+            <path d="M404 250c-13 0-24 10-24 24 0 17 24 42 24 42s24-25 24-42c0-14-11-24-24-24z" fill="#ea4335" stroke="#b31412" stroke-width="1"/>
+            <circle cx="404" cy="274" r="8.5" fill="#fff"/>
+          </svg>
+          <span class="gmap-zoom" aria-hidden="true"><span>+</span><span>&minus;</span></span>
+          <span class="gmap-scale" aria-hidden="true">200&nbsp;m</span>
+          <span class="tag">View larger map <span aria-hidden="true">&#8599;</span></span>
         </a>
       </div>
     </div>

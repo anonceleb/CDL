@@ -292,6 +292,26 @@ section.tight{padding:64px 0}
   font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;
   padding:8px 12px;border:1px solid var(--rule);
 }
+
+/* faux Google-map tile for the Visit block */
+.gmap .gmap-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.gmap .tag{background:#fff;border-color:#0000001f;box-shadow:0 1px 3px #0000002e;text-transform:none;letter-spacing:.02em;display:inline-flex;gap:6px;align-items:center}
+.gmap-zoom{
+  position:absolute;top:12px;left:12px;display:flex;flex-direction:column;
+  background:#fff;border-radius:3px;box-shadow:0 1px 4px #00000030;overflow:hidden;
+}
+.gmap-zoom span{
+  width:30px;height:30px;display:flex;align-items:center;justify-content:center;
+  font-family:"Jost",sans-serif;font-size:18px;color:#5f6368;
+}
+.gmap-zoom span:first-child{border-bottom:1px solid #e6e6e6}
+.gmap-scale{
+  position:absolute;right:14px;bottom:16px;padding-bottom:3px;
+  border:2px solid #00000059;border-top:0;
+  font-family:"Arial",sans-serif;font-size:11px;color:#3c4043;
+  background:#ffffffb8;line-height:1;padding:0 6px 3px;
+}
+.gmap:hover .gmap-canvas{filter:brightness(.97)}
 .visit-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
 
 /* ================= FOOTER ================= */

@@ -24,6 +24,28 @@ least resistance: it creates the DNS record and TLS certificate for you.
 Moving back to Petpooja later is a single DNS change — repoint the record, no code
 changes needed here.
 
+### Apex vs www — must stay consistent
+
+Every canonical signal in the HTML (`<link rel="canonical">`, `og:url`, `sitemap.xml`,
+`robots.txt`) points at the **apex** `https://cafe-du-lamour.com/`. So the apex must
+serve the site, and `www` must 301-redirect to it (not the other way round):
+
+- Bind the Worker / Pages project to **both** `cafe-du-lamour.com` and
+  `www.cafe-du-lamour.com`.
+- Add a Cloudflare **Redirect Rule**: `www.cafe-du-lamour.com/*` →
+  `https://cafe-du-lamour.com/$1`, 301.
+
+If you'd rather make `www` canonical instead, that's fine — but then change all four
+signals above in both HTML files to match, or search engines see the canonical URL
+returning a redirect.
+
+### Fonts load non-blocking
+
+The Google Fonts `<link>` uses `media="print" onload="this.media='all'"` with a
+`<noscript>` fallback so it doesn't block first paint. If a Content-Security-Policy
+is ever added at the Worker, it must allow the inline `onload` handler (or switch to
+a `rel="preload" as="style"` swap done from `js/main.js`).
+
 ## Deploying (GitHub Pages — alternative)
 
 1. Push `site/` to a GitHub repo, as the repo root (or use the `docs/` convention).
