@@ -6,6 +6,11 @@ page in any static file server and it works. The masthead and footer are duplica
 across the two pages (no templating layer to share them from) — a change to one
 (new nav link, new social URL, a footer edit) needs the same edit made in both files.
 
+The Cloudflare Worker serves these files at **extensionless** URLs — `menu.html` is
+live at `/menu`, `index.html` at `/`. So all internal links, `<link rel="canonical">`,
+`og:url`, `sitemap.xml` and the JSON-LD use `/menu` and `/`, not the `.html` names.
+Keep it that way when adding links, or the canonical URL will 307-redirect.
+
 ## Deploying (Cloudflare Pages — recommended)
 
 The domain `cafe-du-lamour.com` is already on Cloudflare, so Pages is the path of
